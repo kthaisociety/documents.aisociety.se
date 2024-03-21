@@ -1,0 +1,21 @@
+baseURL = 'https://documents.aisociety.se'
+languageCode = 'en-us'
+title = 'AI Society Documents'
+
+[module]
+  [[module.imports]]
+    disable = false
+    ignoreConfig = false
+    ignoreImports = true
+    path = "github.com/brianreumere/plague"  # Theme
+
+[frontmatter]
+  date = [':filename', ':default']
+
+[params]
+  siteHeaderText = "AI Society Documents"
+
+  colors = "default"
+
+  [params.hcard]
+    fullName = "KTH AI Society"
